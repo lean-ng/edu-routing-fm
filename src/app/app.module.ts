@@ -15,7 +15,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ExratesModule } from './exrates/exrates.module';
-import { StatsModule } from './stats/stats.module';
+import {SharedModule} from './shared/shared.module';
 
 
 @NgModule({
@@ -37,8 +37,8 @@ import { StatsModule } from './stats/stats.module';
     MatListModule,
     // Routing
     ExratesModule,
-    StatsModule,  // Route order matters!,
     AppRoutingModule,
+    SharedModule.forRoot({ name: 'Hooray' })
   ],
   providers: [],
   bootstrap: [AppComponent]

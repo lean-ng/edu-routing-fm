@@ -6,6 +6,7 @@ import { StatsGlobalComponent } from './pages/stats-global/stats-global.componen
 import { StatsDetailsComponent } from './pages/stats-details/stats-details.component';
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
+import {SharedModule} from '../shared/shared.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     StatsRoutingModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    SharedModule
   ]
 })
 export class StatsModule { }

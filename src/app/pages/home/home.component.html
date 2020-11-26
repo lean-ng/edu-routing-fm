@@ -1,1 +1,8 @@
 <h2>Home</h2>
+
+<div>
+  <button [disabled]="authenticated" (click)="login()" mat-flat-button>Log On</button>
+</div>
+<div>
+  <button [disabled]="!authenticated" (click)="logoff()" mat-flat-button>Log Off</button>
+</div>
