@@ -20,7 +20,7 @@ const appRoutes: Route[] = [
   imports: [
     CommonModule,
     RouterModule.forRoot(appRoutes, {
-      enableTracing: !environment.production
+    //  enableTracing: !environment.production
     })
   ],
   exports: [

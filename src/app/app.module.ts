@@ -15,6 +15,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ExratesModule } from './exrates/exrates.module';
+import { StatsModule } from './stats/stats.module';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { ExratesModule } from './exrates/exrates.module';
     MatListModule,
     // Routing
     ExratesModule,
-    AppRoutingModule,  // Route order matters!
+    StatsModule,  // Route order matters!,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

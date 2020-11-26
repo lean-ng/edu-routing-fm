@@ -1,0 +1,7 @@
+<h2>Zahlen für {{ country$ | async }} {{ country }}</h2>
+
+<div class="actions" style="display: flex; justify-content: space-around">
+<a mat-flat-button color="primary" routerLink="../..">Zurück</a>
+<a mat-flat-button color="accent" routerLink="../germany">Deutschland</a>
+<button mat-flat-button color="primary" (click)="backToList()">Globale Zahlen</button>
+</div>

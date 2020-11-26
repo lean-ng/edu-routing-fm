@@ -1,0 +1,12 @@
+<h2>Globale Statistik</h2>
+<div class="container">
+  <div class="sidenav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/stats">WORLDWIDE</a>
+      <a *ngFor="let c of countries$ | async" mat-list-item [routerLink]="['details',c]">{{ c | uppercase }}</a>
+    </mat-nav-list>
+  </div>
+  <div class="content">
+    <h3>Weltweite Zahlen</h3>
+  </div>
+</div>
